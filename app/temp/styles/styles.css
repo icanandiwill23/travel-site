@@ -767,7 +767,7 @@ a{
     font-size: 1.1rem;
     font-weight: 100;
     text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
-    max-width: 30rem;
+    max-width: 17rem;
     margin-left: auto;
     margin-right: auto;
   }
@@ -775,7 +775,8 @@ a{
 @media only screen and (min-width: 530px){
 
 .large-hero__description{
-      font-size: 1.875rem
+      font-size: 1.875rem;
+      max-width: 30rem
   }
   }
 
