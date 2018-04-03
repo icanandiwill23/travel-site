@@ -8,6 +8,20 @@ gulp.task("scripts", function(){
       output: {
         path: __dirname +  "/../../app/temp/scripts",
         filename: "App.js"
+      },
+      module: {
+        rules: [
+          {
+            test: /\.js$/,
+            exclude: /node_modules/,
+            use: {
+              loader: "babel-loader",
+              options: {
+                presets: ["env"]
+              }
+            }
+          }
+        ]
       }
     }, (err, stats) => {
       if(err){

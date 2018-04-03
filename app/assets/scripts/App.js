@@ -1,10 +1,15 @@
-const $      = require("jquery"),
-      Person = require("./modules/Person");
+const $      = require("jquery");
+import Person from "./modules/Person";
+
+class Adult extends Person{
+  payTaxes(){
+    console.log(this.name + " now owes $12 in Taxes");
+  };
+};
 
 const john = new Person("John Doe", "blue");
 john.greet();
 
-const jane = new Person("Jane Smith", "red");
+const jane = new Adult("Jane Smith", "red");
 jane.greet();
-
-module.exports = Person;
+jane.payTaxes();
