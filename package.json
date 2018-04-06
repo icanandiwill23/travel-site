@@ -21,6 +21,7 @@
     "normalize": "^0.3.1",
     "normalize.css": "^8.0.0",
     "npm": "^5.8.0",
+    "waypoints": "^4.0.1",
     "webpack-cli": "^2.0.13"
   },
   "devDependencies": {
