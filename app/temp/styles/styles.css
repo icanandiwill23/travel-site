@@ -541,18 +541,6 @@ a{
   }
   }
 
-.page-section--testimonial{
-    background-color: #e0e6ef;
-  }
-
-@media only screen and (min-width: 992px){
-
-.page-section--testimonial{
-      background: url("/assets/images/testimonials-bg.jpg") top center no-repeat;
-      background-size: cover
-  }
-  }
-
 .row{
 /* mixin atMedium end */
 }
@@ -918,6 +906,17 @@ a{
     font-weight: 400;
     text-align: center;
     margin: .25rem 0 1rem 0;
+  }
+
+.testimonials--testimonial{
+    background-color: #e0e6ef;
+  }
+
+@media only screen and (min-width: 992px){
+      .testimonials--testimonial.lazyloaded{
+        background: url("/assets/images/testimonials-bg.jpg") top center no-repeat;
+        background-size: cover;
+      }
   }
 
 /* Do not edit modules/_sprite.css directly as it is auto generated from gulp/templates/sprite.css */
